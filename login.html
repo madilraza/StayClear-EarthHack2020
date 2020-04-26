@@ -74,12 +74,27 @@
         </div>
     </section>
 
+    <section>
+        <div class="container-fluid padding align-self-center">
+            <div class="row padding">
+                <div class="col-lg-6 justify-content-center align-self-center text-center">
+                    <h4>Your car use for the day has been: 0</h4>
+                    <h4>Your average car use for the week is: 0</h4>
+                    <h3>Keep up the good work!</h3>
+
+            </div>
+        </div>
+        </div>
+        
+
+    </section>
+
     <section id="goodtime">
     <div class="container-fluid padding">
         <div class="row padding">
             <div class ="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="https://www.rei.com/dam/130817_4264_teach_kid_ride_bike_hero_lg.jpg" alt="A picture of a samll kid on a bike.">
+                    <img class="card-img-top" src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/r0slGlPLiq71cgwa/little-boy-kid-riding-bicycle-in-a-park-in-slow-motion-editorial-editorial_srovpfko_thumbnail-full01.png" alt="A picture of a kid on a bike.">
                     <div class="card-body">
                         <h4 class="card-title">Option 1</h4>
                         <p>Ride a bike! The air is great!</p>
@@ -113,6 +128,7 @@
 </div>
 </div>
   </section>
+  
 
 
 
@@ -179,6 +195,7 @@
                 $('#status').text("Air quality is moderate. Not the worst, but It could be better.");
                 $('#animg').prepend('<img id="animg" src="https://image.freepik.com/free-photo/young-casual-black-man-wearing-sunglasses-showing-welcome-expression_1187-18757.jpg" />');
                 $('#my-air-bk').css('background-color', '#ffeab0');
+                $('#goodtime').show("slow");
 
             } else if (aqius >= 101 && aqius <= 200) {
                 $('#status').text("Air quality is unhealthy, People with respiratory disease such as asthma should avoid all outdoor activities. Try not to use your car today...");
@@ -192,6 +209,8 @@
         
         });
 </script>
+
+
 
 
 
