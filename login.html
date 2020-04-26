@@ -5,81 +5,99 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css"> 
+    
+
+    <link rel="stylesheet" href="style.css">
 
     <!--jQuery, popper.js and bootstrap JS-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <title>Stay Clear</title>
 </head>
+
 <body>
     <!--NavBar-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <a class="navbar-brand" href="#">StayClear</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link active" href="#my-clean-air">My Clean Air<span class="sr-only">(current)</span></a>
-              </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#air-pollution">Air Pollution</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="button" data-toggle="modal" data-target="#exampleModalCenter">Logout</button>
-          </form>
-        </div>
-      </nav>
 
-      <section id="my-air-bk">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#my-clean-air">My Clean Air<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#air-pollution">Air Pollution</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" data-toggle="modal"
+                    data-target="#exampleModalCenter">Logout</button>
+            </form>
+        </div>
+    </nav>
+
+    <section id="my-air-bk">
         <div class="container-fluid padding">
             <div class="row padding">
                 <div class="col-lg-6 justify-content-center align-self-center text-center">
-                  <h1>Weakly Report</h1>
-                  <p>
-
-                  </p>
+                    <h1>Your Outlook</h1>
+                    <h3>Your city is </h3><div id="city-name"></div>
+                    <h3>Your pollution level is</h3>
+                    <div id="pollution-data">
+                    </div>
+                    <div id="status"></div>
                 </div>
-                
+
             </div>
         </div>
-      </section>
+    </section>
 
-      
 
-      <!--Connect-->
-      <div class="container-fluid padding">
-          <div class="row text-center padding">
-        <div class="col-12">
-        <h2>Connect</h2>
+
+    <!--Connect-->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2>Connect</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></a></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-twitter"></a></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-instagram"></a></i></a>
+            </div>
         </div>
-        <div class="col-12 social padding">
-            <a href="#"><i class="fab fa-facebook"></a></i></a>
-            <a href="#"><i class="fab fa-twitter"></a></i></a>
-            <a href="#"><i class="fab fa-instagram"></a></i></a>
-        </div>
-        </div>
-      </div>
+    </div>
 
 
-      <!--Footer-->
-      <footer class="text-center">
+    <!--Footer-->
+    <footer class="text-center">
         <div class="container-fluid padding">
             <div class="row text-center">
                 <div class="col-12">
@@ -92,4 +110,45 @@
 
     </footer>
 </body>
+
+<script type="text/javascript">
+    let resp = null;
+    const API_KEY = '6587b886-157b-40c0-955a-c60949470856';
+    const city = `https://api.airvisual.com/v2/nearest_city?key=${API_KEY}`;
+
+    axios.get(city)
+        .then(function (response) {
+            resp = response;
+
+            
+            
+
+            $('#city-name').text(response.data.data.city);
+
+            let pollutionDiv = $('#pollution-data');
+            for (let [key, value] of Object.entries(response.data.data.current.pollution)) {
+                pollutionDiv.append(`<div>${key}: ${value}</div>`);
+                } 
+
+                
+            let airVisualData = resp.data;
+            let aqius = airVisualData.data.current.pollution.aqius;
+            
+
+            if (aqius <= 50) {
+                $('#status').text("Air quality is good. Let's keep it that way!");
+            } else if (aqius >= 51 && aqius <= 100) {
+                $('#status').text("Air quality is moderate, Unusally sensitive people should think about reducing time outdoors. Here's how you can help improve your quality.");
+
+            } else if (aqius >= 101 && aqius <= 200) {
+                $('#status').text("Air quality is unhealthy, People with respiratory disease such as asthma should avoid all outdoor activities. Here's how you can help improve your air quality");
+            } else {
+                $('#status').text("Air quality is Very Unhealthy, children and adults with respiratory disease should avoid going outdoors. Everyone else should limit outdoor activities. Here's how you can help improve your air quality");
+            };
+        
+        });
+</script>
+
+
+
 </html>

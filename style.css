@@ -80,6 +80,13 @@
       background-color: #eaf2e9;
   }
 
+  .social {
+      font-size: 4.5rem;
+      padding: 2.5rem;
+  }
+
+ 
+
   /*--- Bootstrap Padding Fix --*/
   [class*="col-"] {
       padding: 1rem;
