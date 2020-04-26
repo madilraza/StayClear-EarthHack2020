@@ -85,7 +85,9 @@
       padding: 2.5rem;
   }
 
- 
+  #connect {
+     padding-bottom: 20%;
+ }
 
   /*--- Bootstrap Padding Fix --*/
   [class*="col-"] {
