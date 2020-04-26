@@ -43,28 +43,21 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#my-clean-air">My Clean Air<span
+                    <a class="nav-link active" href="index.html">My Clean Air<span
                             class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#air-pollution">Air Pollution</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
+                
             </ul>
             <form class="form-inline my-2 my-lg-0">
+                <a href="index.html">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="button" data-toggle="modal"
-                    data-target="#exampleModalCenter">Logout</button>
+                    data-target="#exampleModalCenter">Logout</button></a>
             </form>
         </div>
     </nav>
 
     <section id="my-air-bk">
-        <div class="container-fluid padding">
+        <div class="container-fluid padding align-self-center">
             <div class="row padding">
                 <div class="col-lg-6 justify-content-center align-self-center text-center">
                     <h1>Your Outlook</h1>
@@ -73,11 +66,53 @@
                     <div id="pollution-data">
                     </div>
                     <div id="status"></div>
+                    
                 </div>
+                <div class="col-lg-6 justify-content-center" id="animg"></div>
 
             </div>
         </div>
     </section>
+
+    <section id="goodtime">
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class ="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.rei.com/dam/130817_4264_teach_kid_ride_bike_hero_lg.jpg" alt="A picture of a samll kid on a bike.">
+                    <div class="card-body">
+                        <h4 class="card-title">Option 1</h4>
+                        <p>Ride a bike! The air is great!</p>
+                    </div>
+                </div>
+            </div>
+        
+
+    
+            <div class ="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://mk0nationaltodayijln.kinstacdn.com/wp-content/uploads/2020/04/national-walking-day-640x514.jpg" alt="A person walking across the street.">
+                    <div class="card-body">
+                        <h4 class="card-title">Option 2</h4>
+                        <p>Walk to your closest destination knowing you can breath easy.</p>
+                    </div>
+                </div>
+            </div>
+
+    
+            <div class ="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://media2.govtech.com/images/940*626/Minneapolis+transit.jpg" alt="A picture of a street car.">
+                    <div class="card-body">
+                        <h4 class="card-title">Option 3</h4>
+                        <p>Use your public transportation! If you got it, flaunt it!</p>
+                    </div>
+                </div>
+            </div>
+
+</div>
+</div>
+  </section>
 
 
 
@@ -137,13 +172,22 @@
 
             if (aqius <= 50) {
                 $('#status').text("Air quality is good. Let's keep it that way!");
+                $('#animg').prepend('<img id="animg" src="https://assets.entrepreneur.com/content/3x2/2000/20180627194538-GettyImages-828514788.jpeg?width=700&crop=2:1" />');
+                $('#my-air-bk').css('background-color', '#cbf0c9');
+                $('#goodtime').show("slow");
             } else if (aqius >= 51 && aqius <= 100) {
-                $('#status').text("Air quality is moderate, Unusally sensitive people should think about reducing time outdoors. Here's how you can help improve your quality.");
+                $('#status').text("Air quality is moderate. Not the worst, but It could be better.");
+                $('#animg').prepend('<img id="animg" src="https://image.freepik.com/free-photo/young-casual-black-man-wearing-sunglasses-showing-welcome-expression_1187-18757.jpg" />');
+                $('#my-air-bk').css('background-color', '#ffeab0');
 
             } else if (aqius >= 101 && aqius <= 200) {
-                $('#status').text("Air quality is unhealthy, People with respiratory disease such as asthma should avoid all outdoor activities. Here's how you can help improve your air quality");
+                $('#status').text("Air quality is unhealthy, People with respiratory disease such as asthma should avoid all outdoor activities. Try not to use your car today...");
+                $('#animg').prepend('<img id="animg" src="https://jlwatsonconsulting.typepad.com/.a/6a0133f49a611c970b01bb09c65a36970d-600wi" />');
+                $('#my-air-bk').css('background-color', '##ffd0b0');
             } else {
-                $('#status').text("Air quality is Very Unhealthy, children and adults with respiratory disease should avoid going outdoors. Everyone else should limit outdoor activities. Here's how you can help improve your air quality");
+                $('#status').text("Air quality is Very Unhealthy, children and adults with respiratory disease should avoid going outdoors. Everyone else should limit outdoor activities. Strongly advise against using your car today...");
+                $('#animg').prepend('<img id="animg" src="https://static01.nyt.com/images/2020/04/10/video/HowToMakeAMask_Cover_1/HowToMakeAMask_Cover_1-square640.jpg" />');
+                $('#my-air-bk').css('background-color', '#ffabab');
             };
         
         });
