@@ -28,6 +28,15 @@ def main():
    # Pass the template data into the template main.html and return it to the user
    return render_template('main.html', **templateData)
 
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    if request.method == 'POST':
+        time_diff = time.clock() - session.get('start_time', 0)
+        print time_diff
+
+    session['start_time'] = time.clock()
+    return render_template('main.html', **templateData)
+
 # The function below is executed when someone requests a URL with the pin number and action in it:
 @app.route("/<changePin>/<action>")
 def action(changePin, action):
